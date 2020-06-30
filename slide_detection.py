@@ -43,8 +43,9 @@ def main():
     ### video capture to go through whole video
     vidcap = cv2.VideoCapture('Lec_examp.mp4')
     success = True 
-    start = 0   # variable to check if this is the first frame
-    slides = [] # list to add time stamps and norm values to
+    # start = 0   # variable to check if this is the first frame
+    timestamps = [] # list to add time stamps and norm values to
+    slides = [] # list to add predicted slide change times to
     f = 0       # current frame value
     prev = 0    # previous frame value
 
@@ -52,10 +53,19 @@ def main():
         success, image = vidcap.read()
         if (f%interval == 0):
             new = np.array(image)
-            gnew = np.dot(new, d)
-            diff = np.subtract(scr_shot, gnew)
-            norm = np.linalg.norm(diff)
-            slides.append(((prev//fps, f//fps), norm))
+            gnew = np.dot(new, d) # grayscale numpy version of image 
+            diff = np.subtract(scr_shot, gnew) # difference between two images
+            norm = np.linalg.norm(diff) # norm of difference
+            timestamps.append(((prev//fps, f//fps), norm))
+
+            if (norm >= 10000):
+                start_time_min = int((prev//fps)//60)
+                start_time_sec = int((prev//fps)-(60*start_time_min))
+                end_time_min = int((f//fps)//60)
+                end_time_sec = int((f//fps)-(60*end_time_min))
+                mmss = f"{start_time_min}:{start_time_sec} - {end_time_min}:{end_time_sec}" 
+                slides.append(mmss)
+
             prev = f
             
         f += 1 
@@ -63,9 +73,11 @@ def main():
         
         
     ### create txt file of frames and norms ###    
-    with open("norms_1.2.txt", "w") as output:
-        for listitem in slides:
+    with open("norms_1.3.txt", "w") as output:
+        for listitem in timestamps:
             output.write('%s\n' % str(listitem))
+
+    print(slides)
 
 
 main()
