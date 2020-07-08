@@ -9,15 +9,20 @@ fullAudio = "fullAudio.wav"
 tempAudio = "tempAudio.wav"
 div = 60000 #clip division in milliseconds
 
+if fileName[len(fileName)-4] == ".":
+    txtfile = fileName[:-4] + ".txt"
+else:
+    txtfile = fileName + ".txt"
+
 video = VideoFileClip(fileName) # 2.
 
-
 audio = video.audio # 3.
-print(type(audio))
 audio.write_audiofile(fullAudio) # 4.
 
 audio = AudioSegment.from_wav(fullAudio)
 clips = len(audio)//div
+
+text = open(txtfile,"w+")
 
 
 r = sr.Recognizer()
@@ -31,7 +36,9 @@ for x in range(clips+1):
 
     with sr.AudioFile(tempAudio) as source: #ISSUE HERE, find way to not have to write a file every time
         audioOut = r.record(source)
-    print(r.recognize_google(audioOut))
+    text.write(r.recognize_google(audioOut))
+
+text.close
 
 os.remove(fullAudio)
 os.remove(tempAudio)
