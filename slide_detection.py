@@ -2,10 +2,11 @@ import cv2
 import matplotlib.pyplot as plt
 # %matplotlib inline
 import numpy as np
+import time
 
 SLIDEENDS = []
 
-RUN = 1
+# RUN = 1
 
 # function to check if new slide should be saved
 # x = new slide, y = end of prev slide
@@ -21,14 +22,15 @@ def new_checks(x,y):
         
         for i in range(l):
             norm[i] = np.linalg.norm(diffs[i,:])
-        print(norm)
+        # print(norm)
+        SLIDEENDS.append(y)
         if(np.amin(norm) <= 10000):
             return False
         else:
-            SLIDEENDS.append(y)
+            
             return True
-    print(RUN)
-    RUN += 1
+    # print(RUN)
+    # RUN += 1
 
         
 
@@ -70,7 +72,7 @@ def main():
 
 
     scr_shot = gff
-    interval = fps                             # take screenshot every second
+    interval = 5*fps  # k*fps = take screenshot every k seconds
 
     ### video capture to go through whole video
     vidcap = cv2.VideoCapture('zoom_0.mp4')
@@ -98,7 +100,9 @@ def main():
             timestamps.append(((prev//fps, f//fps), norm))
 
             if (norm >= 10000):
+                # start_time = time.time()
                 check = (new_checks(gnew,scr_shot))
+                # print("--- %s seconds ---" % (time.time() - start_time))
                 if(check == True):
                     start_time_min = int((prev//fps)//60)
                     start_time_sec = int((prev//fps)-(60*start_time_min))
@@ -114,11 +118,12 @@ def main():
         
         
     ### create txt file of frames and norms ###    
-    with open("norms_2.0.txt", "w") as output:
+    with open("norms_2.2.txt", "w") as output:
         for listitem in timestamps:
             output.write('%s\n' % str(listitem))
 
     print(slides)
 
-
+start_time = time.time()
 main()
+print("--- %s seconds ---" % (time.time() - start_time))
