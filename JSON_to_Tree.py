@@ -40,11 +40,11 @@ def uniques(alist):
 
     return blist
 
-def treeify(alist):
+def treeify(alist, lecture):
     """
     Turns concepts defined in alist into a tree, returns the top node
     """
-    top = anytree.Node('ML Lec 1_2')
+    top = anytree.Node(lecture)
     nodes = {}
     names = []
     depth = finddepth(alist)
@@ -108,8 +108,11 @@ def processJSON(title="SML Lec 1_2.txt"):
     
     print('Topics: ', topics, '\n')
         
-    top = treeify(topics)
+    if '.txt' in title:
+        title = title[:-4]
+    top = treeify(topics, title)
     print(anytree.RenderTree(top, style=anytree.render.ContStyle()).by_attr())
 
 if __name__ == '__main__':
-    processJSON()
+    inp = input('Which lecture to index? Type here with .txt extension \n')
+    processJSON(str(inp))
