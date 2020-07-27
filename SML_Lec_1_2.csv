@@ -1,0 +1,280 @@
+0.93347780000000014,00:00:00.000,00:00:02.839,In this video I'm going to define what is probably
+0.93347780000000014,00:00:02.895,00:00:05.677,"the most common type of machine learning problem,"
+0.93347780000000025,00:00:05.677,00:00:09.869,which is supervised learning. I'll define supervised learning more formally
+0.93347780000000025,00:00:09.925,00:00:10.260,"later,"
+0.93347780000000014,00:00:10.260,00:00:13.109,but it's probably best to explain or starts with an
+0.93347780000000014,00:00:13.165,00:00:15.064,example of what it is and will do.
+0.92090860000000008,00:00:15.064,00:00:19.499,The formal definition later. Let's say he wants to predict
+0.92090860000000008,00:00:19.576,00:00:20.723,housing prices.
+0.914624,00:00:20.723,00:00:24.832,"Awhile back, a student collected datasets from the city of"
+0.914624,00:00:24.903,00:00:25.541,"Portland,"
+0.9146240000000001,00:00:25.541,00:00:28.577,"OR, and let's say you plot the data set and"
+0.9146240000000001,00:00:28.648,00:00:31.966,"it looks like this here on the horizontal axis,"
+0.914624,00:00:31.966,00:00:35.509,the size of different houses in square feet and on
+0.914624,00:00:35.580,00:00:36.855,the vertical axis.
+0.9146240000000001,00:00:36.855,00:00:40.766,The prices of different houses in thousands of dollars.
+0.9146240000000001,00:00:40.766,00:00:44.091,"So given this data, let's say you have a friend"
+0.9146240000000001,00:00:44.162,00:00:47.700,who owns the holes that is saying 750 square feet.
+0.88530470000000028,00:00:47.700,00:00:50.329,And hoping to sell the House and they want to
+0.88530470000000028,00:00:50.387,00:00:52.782,know how much they can get for the house.
+0.88530469999999994,00:00:52.782,00:00:55.323,So how can the learning algorithm help you?
+0.88530470000000028,00:00:55.323,00:00:58.246,One thing a learning algorithm might be able to do
+0.88530470000000028,00:00:58.305,00:01:00.117,is put a straight line through.
+0.88530470000000028,00:01:00.117,00:01:02.998,The dates are also fit a straight line to the
+0.88530470000000028,00:01:03.062,00:01:05.430,data and based on that it looks like.
+0.9281416,00:01:05.430,00:01:11.090,"Maybe there holes can be sold for maybe about $150,000."
+0.92586374300000007,00:01:11.090,00:01:13.633,But maybe this isn't the only learning algorithm you can
+0.92586374300000007,00:01:13.678,00:01:13.860,"use,"
+0.925863743,00:01:13.860,00:01:15.830,and there might be a better one.
+0.908055067,00:01:15.830,00:01:19.088,"For example, instead of finding a straight line to the"
+0.908055067,00:01:19.148,00:01:19.450,"data,"
+0.908055067,00:01:19.450,00:01:23.188,"we might decide that it's better to Philly quadratic function,"
+0.90805506700000016,00:01:23.188,00:01:25.739,or a second order polynomial to this data.
+0.908055067,00:01:25.739,00:01:28.469,"And if you do that to make a prediction here,"
+0.908055067,00:01:28.469,00:01:30.012,"then it looks like. Well,"
+0.908055067,00:01:30.012,00:01:33.216,"maybe they can sell the house for closer to $200,000."
+0.90805506699999983,00:01:33.216,00:01:35.863,One of the things we talk about later is how
+0.90805506699999983,00:01:35.923,00:01:37.607,to choose and how to decide.
+0.908055067,00:01:37.607,00:01:40.091,Do you want to fit a straight line to the
+0.908055067,00:01:40.152,00:01:40.455,"data,"
+0.908055067,00:01:40.455,00:01:43.778,or do you want to physically driving function the data?
+0.90805506700000016,00:01:43.778,00:01:46.270,And there's no fair picking whichever one.
+0.90712240000000022,00:01:46.270,00:01:49.319,"Gives your friend the better holster cell,"
+0.90712240000000033,00:01:49.319,00:01:52.487,but each of these would be a fine example of
+0.90712240000000033,00:01:52.559,00:01:54.071,"a learning algorithm,"
+0.90712239999999966,00:01:54.071,00:01:58.067,so this is an example of a supervised learning algorithm
+0.90712239999999966,00:01:58.138,00:02:02.134,and the term supervised learning refers to the fact that
+0.90712239999999966,00:02:02.206,00:02:05.488,we gave the algorithm a data sets in which the
+0.90712240000000011,00:02:05.488,00:02:07.757,quote right answers were given.
+0.90712240000000011,00:02:07.757,00:02:10.770,"That is, we gave it the data set of houses"
+0.90712240000000011,00:02:10.842,00:02:13.998,"in which for every example in this data set,"
+0.90712240000000022,00:02:13.998,00:02:16.480,we told it what is the right price.
+0.8823501,00:02:16.480,00:02:19.045,What was the actual price that that holds?
+0.8823501,00:02:19.045,00:02:21.641,So for and the task of the algorithm was to
+0.8823501,00:02:21.701,00:02:24.176,"just produce more of these right answers,"
+0.8823501,00:02:24.176,00:02:25.846,"such As for this new holes,"
+0.8823501,00:02:25.846,00:02:29.470,you know that your friend may be trying to sell.
+0.9111588,00:02:29.470,00:02:31.512,"To define it, been water menology."
+0.91115880000000027,00:02:31.512,00:02:34.922,This is also called a regression problem and by regression
+0.91115880000000027,00:02:34.981,00:02:38.333,problem I mean we're trying to predict a continuous value
+0.91115880000000027,00:02:38.391,00:02:38.803,"output,"
+0.91115880000000038,00:02:38.803,00:02:41.989,namely the price. So technically I guess prices can be
+0.91115880000000038,00:02:42.048,00:02:43.936,rounded off to the nearest cent.
+0.9111588,00:02:43.936,00:02:46.561,"So maybe prices are actually discrete value,"
+0.9111588,00:02:46.561,00:02:49.127,but usually we think of the price of holes.
+0.91115879999999982,00:02:49.127,00:02:52.353,Azarole number was a scalar value as a continuous value
+0.91115879999999982,00:02:52.412,00:02:55.580,number and the term regression refers to the fact that
+0.91115879999999982,00:02:55.639,00:02:59.393,we're trying to predict the sort of continuous values attribute.
+0.91115880000000016,00:02:59.393,00:03:01.960,Here's another supervised learning examples.
+0.889390051,00:03:01.960,00:03:05.555,Some friends and I were actually working on this earlier.
+0.88939005099999979,00:03:05.555,00:03:08.620,Let's see you want to look at medical records and
+0.88939005099999979,00:03:08.683,00:03:11.749,try to predict of a breast cancer is malignant or
+0.88939005099999979,00:03:11.811,00:03:12.249,benign.
+0.88939005099999968,00:03:12.249,00:03:15.619,If someone discovers a breast tumor lump in the breast
+0.88939005099999968,00:03:15.682,00:03:18.740,of malignant tumor is a tumor that is harmful and
+0.88939005099999968,00:03:18.802,00:03:21.299,dangerous and a benign tumor is a tumor.
+0.8893900509999999,00:03:21.299,00:03:24.702,This is harmless. So obviously people care a lot about
+0.8893900509999999,00:03:24.765,00:03:25.080,this.
+0.8893900509999999,00:03:25.080,00:03:28.351,Let's you collect the data set and suppose you're in
+0.8893900509999999,00:03:28.414,00:03:29.295,your data set.
+0.889390051,00:03:29.295,00:03:31.526,"You have on your horizontal access,"
+0.889390051,00:03:31.526,00:03:32.890,the size of the tumor.
+0.9105854000000001,00:03:32.890,00:03:34.622,"And on the vertical axis,"
+0.91058540000000021,00:03:34.622,00:03:37.352,I'm going to plot one or zero yes or no.
+0.91058540000000032,00:03:37.352,00:03:40.996,Whether or not these are examples of tumors we've seen
+0.91058540000000032,00:03:41.063,00:03:42.413,"before on malignant,"
+0.91058540000000021,00:03:42.413,00:03:46.280,which is one or zero or not malignant or benign.
+0.89373249999999993,00:03:46.280,00:03:49.133,So let's see what data set looks like this where
+0.89373249999999993,00:03:49.192,00:03:51.748,we saw a tumor of this size that turned out
+0.89373249999999993,00:03:51.807,00:03:52.580,to be benign.
+0.89373250000000015,00:03:52.580,00:03:55.790,One of this size this size.
+0.86067009999999988,00:03:55.790,00:03:57.176,"And so on. And sadly,"
+0.8606701,00:03:57.176,00:04:00.444,we also saw a few malignant tumors that wanted that
+0.8606701,00:04:00.509,00:04:00.829,size.
+0.85778234999999992,00:04:00.829,00:04:04.850,One of that size. One of that size.
+0.90510314699999939,00:04:04.850,00:04:08.198,So on so. In this example I have 5 examples
+0.90510314699999939,00:04:08.276,00:04:12.402,of benign tumors shown down here and five examples of
+0.90510314699999939,00:04:12.480,00:04:16.840,malignant tumors shown with a vertical axis value of one
+0.905103147,00:04:16.840,00:04:20.691,and less. They have a friend who tragically has a
+0.905103147,00:04:20.769,00:04:21.791,"breast tumor,"
+0.905103147,00:04:21.791,00:04:24.730,and let's say her breast tumor sizes.
+0.90510314699999994,00:04:24.730,00:04:28.020,Maybe somewhere around this value.
+0.92284549999999987,00:04:28.020,00:04:31.173,The machine learning question is can you estimate what is
+0.92284549999999987,00:04:31.229,00:04:32.114,the probability?
+0.9228455,00:04:32.114,00:04:36.080,What's the chance that the tumor is malignant versus benign?
+0.92477599999999993,00:04:36.080,00:04:38.672,So introduce a bit more terminology.
+0.92477599999999982,00:04:38.672,00:04:42.034,This is an example of a classification problem.
+0.924776,00:04:42.034,00:04:46.903,Determine classification refers to the fact that here we're trying
+0.924776,00:04:46.977,00:04:51.108,to predict a discrete value output zero or one malignant
+0.924776,00:04:51.182,00:04:51.920,or benign.
+0.90157740000000042,00:04:51.920,00:04:56.129,And it turns out that in classification problem sometimes you
+0.90157740000000042,00:04:56.198,00:04:59.647,can have more than two values for the two possible
+0.90157740000000042,00:04:59.716,00:05:01.234,values for the output.
+0.9015774000000002,00:05:01.234,00:05:04.916,"As a concrete example, maybe there are three types of"
+0.9015774000000002,00:05:04.986,00:05:06.028,"breast cancers,"
+0.9015774000000002,00:05:06.028,00:05:09.371,and so you may try to predict the discrete value
+0.9015774000000002,00:05:09.441,00:05:10.137,"output 01,"
+0.90157740000000008,00:05:10.137,00:05:13.767,two or three with zero may mean benign benign tumor.
+0.90157740000000008,00:05:13.767,00:05:17.055,"So no cancer, and one may mean type one cancer,"
+0.9015774,00:05:17.055,00:05:20.205,"three types of cancer, whatever Type 1 means,"
+0.9015774,00:05:20.205,00:05:23.150,and two maybe in the second type of cancer.
+0.88545069999999992,00:05:23.150,00:05:25.678,"And three, maybe the third type of cancer,"
+0.88545069999999992,00:05:25.678,00:05:28.560,"but this would also be a classification problem,"
+0.88545069999999992,00:05:28.560,00:05:31.577,because there's sort of a disk value set of outputs
+0.88545069999999992,00:05:31.637,00:05:35.009,corresponding to know cancer or cancer type one or cancer
+0.88545069999999992,00:05:35.068,00:05:37.967,type 2 or kinds type 3IN classification problems.
+0.88545069999999992,00:05:37.967,00:05:40.319,There is another way to plot this data.
+0.88545069999999992,00:05:40.319,00:05:42.025,Let me show you what I mean.
+0.88545069999999992,00:05:42.025,00:05:45.125,I'm going to use a slightly different set of symbols
+0.88545069999999992,00:05:45.185,00:05:46.258,"to plot this data,"
+0.8854507,00:05:46.258,00:05:49.049,so if two messiahs is going to be the attribute
+0.8854507,00:05:49.108,00:05:52.314,"that I'm going to use to predict malignancy or benign,"
+0.88545069999999992,00:05:52.314,00:05:54.490,as I can also draw my data like this.
+0.88752419999999976,00:05:54.490,00:05:57.885,I'm going to use different symbols to denote my benign
+0.88752419999999976,00:05:57.948,00:05:58.891,malignant sore.
+0.8875242,00:05:58.891,00:06:01.061,My negative and positive examples.
+0.8875242,00:06:01.061,00:06:02.983,"So instead of drawing crosses,"
+0.88752419999999987,00:06:02.983,00:06:06.020,I'm now going to draw owes for the benign tumors.
+0.87131229999999971,00:06:08.290,00:06:13.465,Like so and I'm going to keep using access to
+0.87131229999999971,00:06:13.580,00:06:15.880,denote my malignant.
+0.82504403599999976,00:06:15.880,00:06:18.986,"Tumors OK, I hope this figure makes sense."
+0.82504403599999965,00:06:18.986,00:06:22.054,All I did was I took these my data set
+0.82504403599999965,00:06:22.135,00:06:24.880,on top and I just mapped sit down.
+0.88635430000000015,00:06:24.880,00:06:27.967,To this rail line like so and started to use
+0.88635430000000015,00:06:28.037,00:06:29.300,"different symbols,"
+0.88635429999999993,00:06:29.300,00:06:33.719,circles and crosses to denote malignant versus benign examples.
+0.88635430000000015,00:06:33.719,00:06:36.948,Now in this example we use only one feature or
+0.88635430000000015,00:06:37.018,00:06:38.001,"one attribute,"
+0.88635430000000037,00:06:38.001,00:06:41.902,namely the tumor size. In order to predict whether tumor
+0.88635430000000037,00:06:41.971,00:06:46.011,"is malignant or benign in other machine learning problems,"
+0.8863543,00:06:46.011,00:06:49.244,we have more than one feature on more than one
+0.8863543,00:06:49.314,00:06:50.017,attribute.
+0.88635430000000015,00:06:50.017,00:06:54.007,Here's an example. Let's say that instead of just knowing
+0.88635430000000015,00:06:54.077,00:06:55.127,"the tumor size,"
+0.88540879,00:06:55.127,00:06:58.368,we know about the. Age of the patients and the
+0.88540879,00:06:58.438,00:06:59.213,tumor size.
+0.88493603500000007,00:06:59.213,00:07:02.760,"In that case, maybe your data set would look like"
+0.88493603500000007,00:07:02.832,00:07:03.194,"this,"
+0.88493603500000007,00:07:03.194,00:07:06.455,where I may have a set of patients with those
+0.88493603500000007,00:07:06.528,00:07:06.890,"ages,"
+0.88493603499999984,00:07:06.890,00:07:10.688,"and that human size, and they look like this an"
+0.88493603499999984,00:07:10.769,00:07:12.870,different set of patients.
+0.874557555,00:07:12.870,00:07:14.220,They look more different.
+0.88065399999999994,00:07:16.370,00:07:21.269,Whose tumors turn out to be malignant as denoted by
+0.88065399999999994,00:07:21.365,00:07:22.518,the crosses.
+0.88065399999999994,00:07:22.518,00:07:27.328,So let's say you have a friends who tragically has
+0.88065399999999994,00:07:27.424,00:07:28.194,"a tumor,"
+0.88065399999999994,00:07:28.194,00:07:33.572,and maybe there are two messies an age falls around
+0.88065399999999994,00:07:33.677,00:07:34.310,there.
+0.87643930000000048,00:07:34.310,00:07:37.506,So given the data set like this while the learning
+0.87643930000000048,00:07:37.570,00:07:40.639,algorithm may do is for the straight line to the
+0.87643930000000048,00:07:40.703,00:07:44.091,data to try to separate out the malignant tumors from
+0.87643929999999992,00:07:44.091,00:07:47.751,"the benign ones, and so the learning algorithm may decide"
+0.87643929999999992,00:07:47.815,00:07:49.870,"to for the three line like that,"
+0.87643930000000014,00:07:49.870,00:07:53.039,to separate out the two classes of tumors an with
+0.87643930000000014,00:07:53.104,00:07:53.427,"this,"
+0.87643930000000014,00:07:53.427,00:07:56.976,hopefully we can decide that your friends tumor is more
+0.87643930000000014,00:07:57.040,00:07:57.492,likely.
+0.8764393,00:07:57.492,00:07:59.079,"So if it was over there,"
+0.87643929999999992,00:07:59.079,00:08:03.144,that hopefully the learning algorithm will say that your friends
+0.87643929999999992,00:08:03.208,00:08:05.240,tumor falls on this benign side.
+0.8758318,00:08:05.240,00:08:08.699,And is therefore more likely to be benign to malignance.
+0.87583180000000016,00:08:08.699,00:08:10.944,"In this example we had two features,"
+0.87583180000000016,00:08:10.944,00:08:13.723,namely the age of the patient and the size of
+0.87583180000000016,00:08:13.785,00:08:14.402,the tumor.
+0.8758318,00:08:14.402,00:08:16.587,"In other machine learning problems,"
+0.87583180000000016,00:08:16.587,00:08:19.784,we will often have more features and my friends that
+0.87583180000000016,00:08:19.846,00:08:21.137,"work in this problem,"
+0.87583180000000016,00:08:21.137,00:08:24.813,they actually use other features like these which is clumped
+0.87583180000000016,00:08:24.875,00:08:27.448,"thickness compliments of the breast tumor,"
+0.8758318,00:08:27.448,00:08:29.450,"uniformity of cell sized, tumor,"
+0.87583180000000016,00:08:29.450,00:08:32.302,"uniformity of cell shape, the tumor and so on,"
+0.8758318,00:08:32.302,00:08:33.940,and other features as well.
+0.9143646359999994,00:08:33.940,00:08:37.427,Turns out one of the most interesting learning algorithms that
+0.9143646359999994,00:08:37.483,00:08:40.351,will see in this falls as a learning algorithm deck
+0.9143646359999994,00:08:40.408,00:08:42.826,and deal with not just two or three or five
+0.914364636,00:08:42.826,00:08:46.179,"features, but an infinite number of features on this slide."
+0.91436463600000006,00:08:46.179,00:08:48.750,"I've listed total of five different features,"
+0.914364636,00:08:48.750,00:08:51.209,"right two on the axes and see more up here,"
+0.914364636,00:08:51.209,00:08:54.003,"but it turns out that for some learning problems,"
+0.91436463600000006,00:08:54.003,00:08:56.336,what you really want is not to use like 3
+0.91436463600000006,00:08:56.393,00:08:57.189,"or 5 features,"
+0.91436463600000006,00:08:57.189,00:08:59.974,but instead you want to use an infinite number of
+0.91436463600000006,00:09:00.031,00:09:00.542,features.
+0.91436463600000006,00:09:00.542,00:09:04.231,An infinite number of attributes so that you're learning algorithm
+0.91436463600000006,00:09:04.286,00:09:04.510,has.
+0.903332055,00:09:04.510,00:09:07.521,Lots of attributes of features accused with which to make
+0.903332055,00:09:07.574,00:09:08.525,those predictions.
+0.903332055,00:09:08.525,00:09:10.914,So how do you deal with an infinite number of
+0.903332055,00:09:10.967,00:09:11.445,features?
+0.903332055,00:09:11.445,00:09:13.758,So we sort of how they even slow an infinite
+0.903332055,00:09:13.811,00:09:16.755,number of things on the computer and your computer going
+0.903332055,00:09:16.808,00:09:17.912,to run on the memory.
+0.903332055,00:09:17.912,00:09:20.180,But it turns out that when we talk about an
+0.903332055,00:09:20.233,00:09:22.501,"algorithm called to support vector machine,"
+0.90333205500000013,00:09:22.501,00:09:25.447,there would be a neat mathematical trick that will allow
+0.90333205500000013,00:09:25.500,00:09:28.393,a computer to deal with an infinite number of features.
+0.903332055,00:09:28.393,00:09:31.239,Imagine that I didn't just write down to features here
+0.903332055,00:09:31.292,00:09:33.347,"and features the features on the right,"
+0.903332055,00:09:33.347,00:09:35.120,but imagine that I wrote down and.
+0.88189390000000034,00:09:35.120,00:09:37.838,Infinitely long this I just kept writing more and more
+0.88189390000000034,00:09:37.888,00:09:40.756,and more features like an infinitely long as the features
+0.88189390000000034,00:09:40.807,00:09:42.870,turns out will be able to come up with an
+0.8818938999999999,00:09:42.870,00:09:45.180,algorithm so I can deal with that.
+0.90161489999999966,00:09:45.180,00:09:47.736,So just a knee cap in this class will talk
+0.90161489999999966,00:09:47.797,00:09:51.571,about supervised learning and the idea is that it's supervised
+0.90161489999999966,00:09:51.632,00:09:53.214,"learning in every example,"
+0.9016149,00:09:53.214,00:09:56.113,"enough data set, we are told what is the quote?"
+0.90161490000000011,00:09:56.113,00:09:59.656,Correct answer that we would have quite like the algorithm
+0.90161490000000011,00:09:59.717,00:10:01.550,"to predict along that example,"
+0.90161490000000011,00:10:01.550,00:10:04.307,such as the price of holes or whether a tumor
+0.90161490000000011,00:10:04.369,00:10:05.778,is malignant or benign.
+0.9016149,00:10:05.778,00:10:09.584,We also talked about the regression problem and by regression.
+0.90161489999999989,00:10:09.584,00:10:12.665,That means that our goal is to predict a continuous
+0.90161489999999989,00:10:12.725,00:10:16.470,valued outputs and we talked about the classification problem.
+0.85041200000000017,00:10:16.470,00:10:19.351,Where they go is predicted discrete value output.
+0.85041200000000006,00:10:19.351,00:10:22.740,Just a quick wrap up question.
+0.924615264,00:10:22.740,00:10:26.225,Suppose you're running a company and you want to develop
+0.924615264,00:10:26.288,00:10:29.524,learning algorithms to address each of two problems.
+0.92461526399999994,00:10:29.524,00:10:32.715,"In the first problem, you have a large inventory of"
+0.92461526399999994,00:10:32.778,00:10:33.779,identical items.
+0.92461526399999994,00:10:33.779,00:10:37.028,So imagine that you have thousands of copies of some
+0.92461526399999994,00:10:37.090,00:10:38.590,"identical items to sell,"
+0.92461526399999994,00:10:38.590,00:10:41.824,and you want to predict how many of these items
+0.92461526399999994,00:10:41.893,00:10:44.370,you sell over the next three months.
+0.92449796200000012,00:10:44.370,00:10:47.599,In the second problem problem to you like you have
+0.92449796200000012,00:10:47.663,00:10:50.698,lots of users and you want to write software to
+0.92449796200000012,00:10:50.762,00:10:53.991,examine each individual of your customers account.
+0.92449796200000012,00:10:53.991,00:10:57.288,So each one of your customers accounts and for each
+0.92449796200000012,00:10:57.353,00:11:01.038,account decide whether or not the account has been hacked
+0.92449796200000012,00:11:01.102,00:11:02.072,or compromised.
+0.92449796200000012,00:11:02.072,00:11:04.060,"So for each of these problems,"
+0.92449796200000012,00:11:04.060,00:11:07.688,should they be treated as a classification problem or as
+0.92449796200000012,00:11:07.752,00:11:10.538,"a regression problem when the video pauses,"
+0.92449796200000012,00:11:10.538,00:11:14.066,please use your mouse to select whichever of these four
+0.92449796200000012,00:11:14.130,00:11:15.220,options on there.
+0.89881929999999977,00:11:15.220,00:11:18.270,Left you think is the correct answer.
+0.89989894600000031,00:11:20.300,00:11:23.817,So hopefully you got that this is the answer for
+0.89989894600000031,00:11:23.890,00:11:24.843,probably one.
+0.89989894600000031,00:11:24.843,00:11:28.712,I would treat this as a regression problem because if
+0.89989894600000031,00:11:28.785,00:11:30.683,"I have thousands of items,"
+0.89989894600000031,00:11:30.683,00:11:34.184,"well, I would probably just treat this as a real"
+0.89989894600000031,00:11:34.257,00:11:37.028,value as a continuous value and cheat.
+0.89989894600000031,00:11:37.028,00:11:40.822,Therefore the number of items I sell as a continuous
+0.89989894600000031,00:11:40.895,00:11:43.302,"value and for the second problem,"
+0.89989894600000031,00:11:43.302,00:11:47.340,I would treat that as a classification problem because I
+0.89989894600000031,00:11:47.412,00:11:50.656,might say set the value I want to predict the
+0.89989894600000031,00:11:50.728,00:11:51.810,zero to denote.
+0.91913610000000012,00:11:51.810,00:11:54.280,The account has not been hacked.
+0.86428000000000027,00:11:54.280,00:11:57.240,And set the value one to denote an account that
+0.86428000000000027,00:11:57.303,00:11:58.626,has been hacked into.
+0.86428,00:11:58.626,00:12:00.736,"So just like your breast cancers,"
+0.86428000000000027,00:12:00.736,00:12:03.949,right zero or benign one is malignant semi set this
+0.86428000000000027,00:12:04.012,00:12:05.020,be 01 dependent.
+0.86428,00:12:05.020,00:12:07.999,"Whether it's been hacked and have an algorithm,"
+0.86428000000000016,00:12:07.999,00:12:11.352,"try to predict each one of these two discrete values,"
+0.86428,00:12:11.352,00:12:14.456,"and because that's a small number of this values,"
+0.86428,00:12:14.456,00:12:18.510,I would therefore treat it as a classification problem.
+0.93141400000000008,00:12:18.510,00:12:20.944,"So that's it for supervised learning,"
+0.931414,00:12:20.944,00:12:24.852,"and in the next video I'll talk about unsupervised learning,"
+0.931414,00:12:24.852,00:12:29.401,which is the other major category of learning algorithm.

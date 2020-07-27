@@ -1,0 +1,301 @@
+0.946189642,00:00:00.000,00:00:02.989,"In this video, we'll talk about the second major type"
+0.946189642,00:00:03.045,00:00:06.260,of machine learning problem called unsupervised learning.
+0.914683461,00:00:06.260,00:00:09.621,In the last video we talked about supervised learning.
+0.914683461,00:00:09.621,00:00:12.616,"Back then we can't datasets that look like this,"
+0.91468346099999975,00:00:12.616,00:00:15.962,where each example was labeled either as a positive or
+0.91468346099999975,00:00:16.024,00:00:17.078,"negative example,"
+0.914683461,00:00:17.078,00:00:19.767,whether it was a benign or malignant tumor.
+0.914683461,00:00:19.767,00:00:22.456,So for each example is supervised learning.
+0.91468346099999953,00:00:22.456,00:00:25.597,We were told explicitly what is the so called right
+0.91468346099999953,00:00:25.658,00:00:29.907,answer whether it's benign or malignant in unsupervised learning were
+0.91468346099999953,00:00:29.969,00:00:30.646,"given data,"
+0.91468346099999975,00:00:30.646,00:00:34.299,then those different data that looks like this that doesn't
+0.91468346099999975,00:00:34.361,00:00:35.352,"have any labels,"
+0.91468346099999986,00:00:35.352,00:00:38.750,so that all have the same label already know labels.
+0.90440463999999954,00:00:38.750,00:00:41.574,So we're given the data set and we're not told
+0.90440463999999954,00:00:41.635,00:00:44.213,what to do about it and will not tell what
+0.90440463999999954,00:00:44.275,00:00:45.441,each data point is.
+0.90440464,00:00:45.441,00:00:47.813,"Instead, we just here is the data set."
+0.90440463999999943,00:00:47.813,00:00:50.874,Can you find some structure in the data given this
+0.90440463999999943,00:00:50.936,00:00:54.915,data set an unsupervised learning algorithm might decide that the
+0.90440463999999943,00:00:54.977,00:00:57.242,"data lives in two different clusters,"
+0.90440464,00:00:57.242,00:01:00.648,"so there's one cluster and there's a different cluster,"
+0.90440463999999976,00:01:00.648,00:01:04.583,and the unsupervised learning algorithm may break this data into
+0.90440463999999976,00:01:04.644,00:01:06.366,these two separate clusters.
+0.90440464,00:01:06.366,00:01:08.860,So this is called a clustering algorithm.
+0.90687245100000013,00:01:08.860,00:01:11.463,And it turns out to be used in many places.
+0.90687245100000013,00:01:11.463,00:01:14.776,"One example where clustering is used is in Google News,"
+0.906872451,00:01:14.776,00:01:16.729,"and if you not seen this before,"
+0.90687245100000013,00:01:16.729,00:01:20.397,you can actually go to thisurlnews.google.com to take a look.
+0.90687245100000069,00:01:20.397,00:01:23.077,But Google News does is every day it goes and
+0.90687245100000069,00:01:23.137,00:01:26.294,looks at 10s of thousands or hundreds of thousands of
+0.90687245100000069,00:01:26.353,00:01:29.153,news stories on the web and it groups them into
+0.90687245100000013,00:01:29.153,00:01:31.283,"cohesive news stories. For example,"
+0.8731448845625,00:01:31.283,00:01:35.432,let's look here. The URLs Here Link to different news
+0.8731448845625,00:01:35.510,00:01:37.859,"stories about the BP oil well,"
+0.8653616,00:01:37.859,00:01:41.238,"stormy, so let's see I click on one of these"
+0.8653616,00:01:41.315,00:01:41.699,URLs.
+0.8653616,00:01:41.699,00:01:44.980,I'm gonna click on one of these URLs when I
+0.8653616,00:01:45.056,00:01:47.421,get to is a web page like this?
+0.8653616,00:01:47.421,00:01:51.459,Here's a Wall Street Journal article about the BP oil
+0.8653616,00:01:51.536,00:01:53.669,spill stories of beep codes.
+0.8653616,00:01:53.669,00:01:56.229,"Condo, which is name of the slow,"
+0.8653616,00:01:56.229,00:01:59.731,and if you click on a difference URL from that
+0.8653616,00:01:59.807,00:02:03.080,group then you might get a different story.
+0.87456214366666651,00:02:03.080,00:02:05.216,"Is the CNN story. About again,"
+0.89296323099999975,00:02:05.216,00:02:07.880,the BP oil spill and if you click on yet
+0.89296323099999975,00:02:07.947,00:02:11.277,"a third link that you might get a different story,"
+0.89296323099999975,00:02:11.277,00:02:14.769,here's the UK Guardian story about the BP oil spill.
+0.89296323099999964,00:02:14.769,00:02:17.444,So at Google uses done is look at 10s of
+0.89296323099999964,00:02:17.510,00:02:19.182,"thousands of new stories,"
+0.89296323099999975,00:02:19.182,00:02:23.303,an automatically cluster them together so the new stories that
+0.89296323099999975,00:02:23.369,00:02:26.626,all about the same topic get to display together.
+0.89296323099999986,00:02:26.626,00:02:29.327,"It turns out that clustering algorithms,"
+0.89296323099999964,00:02:29.327,00:02:34.549,"an unsupervised learning algorithms, are used in many other problems"
+0.89296323099999964,00:02:34.626,00:02:35.240,as well.
+0.9203735999999999,00:02:35.240,00:02:37.704,Here's one on understanding genomics.
+0.92037359999999979,00:02:37.704,00:02:40.427,Here's an example of DNA microarray data.
+0.92037359999999979,00:02:40.427,00:02:43.669,"The idea is valid group of different individuals,"
+0.92037359999999979,00:02:43.669,00:02:46.689,and for each of them You Measure how much they
+0.92037359999999979,00:02:46.755,00:02:48.921,do or do not have a certain gene.
+0.92037359999999979,00:02:48.921,00:02:52.941,"Technically you measure how much certain jeans are expressed,"
+0.9203735999999999,00:02:52.941,00:02:54.757,"so these colors red, Green,"
+0.92037360000000035,00:02:54.757,00:02:57.695,Gray and so on. They show the degree to which
+0.92037360000000035,00:02:57.760,00:03:01.350,different individuals do or do not have a specific gene
+0.92037360000000035,00:03:01.416,00:03:04.288,and what you can do is then run a clustering
+0.90551783076923065,00:03:04.288,00:03:08.280,algorithm to group. Individuals into different categories on two different
+0.90551783076923065,00:03:08.334,00:03:09.197,"types of people,"
+0.9010611,00:03:09.197,00:03:12.389,so this is unsupervised learning because we're not telling the
+0.9010611,00:03:12.440,00:03:15.169,algorithm in advance that you know these are type one
+0.9010611,00:03:15.221,00:03:15.581,people.
+0.9010611,00:03:15.581,00:03:16.909,"Those are Type 2 persons,"
+0.90106109999999984,00:03:16.909,00:03:18.747,those are Type 3 persons and so on.
+0.90106109999999984,00:03:18.747,00:03:20.484,"And instead what we're saying is,"
+0.90106109999999984,00:03:20.484,00:03:22.823,here's a bunch of data I don't know what's in
+0.90106109999999984,00:03:22.875,00:03:23.395,"this data,"
+0.90106109999999984,00:03:23.395,00:03:25.080,I don't know who's in what type.
+0.9010611,00:03:25.080,00:03:27.838,"I didn't know what the different types of people are,"
+0.9010611,00:03:27.838,00:03:30.851,but can you automatically find structure in the data from?
+0.90106109999999984,00:03:30.851,00:03:34.462,Can you automatically cluster the individuals into these types that
+0.90106109999999984,00:03:34.516,00:03:35.810,I don't know in advance?
+0.90913819999999967,00:03:35.810,00:03:39.468,Because we're not giving the algorithm there right answer for
+0.90913819999999967,00:03:39.528,00:03:41.207,"the examples in my data set,"
+0.9091381999999999,00:03:41.207,00:03:45.625,"this is unsupervised learning, unsupervised learning or clustering is used"
+0.9091381999999999,00:03:45.684,00:03:48.849,for a bunch of other applications is used to organize
+0.9091381999999999,00:03:48.908,00:03:50.341,large computer clusters.
+0.90913820000000023,00:03:50.341,00:03:53.504,I had some friends looking at large data centers that
+0.90913820000000023,00:03:53.564,00:03:56.966,is large computer clusters and trying to figure out which
+0.90913820000000023,00:03:57.026,00:03:59.950,machines tend to work together and if you can put
+0.90913819999999979,00:03:59.950,00:04:03.435,those machines together you can make your data center work
+0.90913819999999979,00:04:03.495,00:04:04.517,more efficiently.
+0.9091382,00:04:04.517,00:04:07.800,Just second application now. Social network analysis.
+0.91970086100000015,00:04:07.800,00:04:11.246,"So, given knowledge about which friends you email the most,"
+0.91970086100000015,00:04:11.246,00:04:14.691,"or given your Facebook friends or your Google plus circles,"
+0.91970086100000015,00:04:14.691,00:04:18.809,can we automatically identify which are cohesive groups of friends
+0.91970086100000015,00:04:18.871,00:04:21.741,or so which are groups of people that all know
+0.91970086100000015,00:04:21.804,00:04:22.490,each other?
+0.9152832,00:04:22.490,00:04:27.180,"Market segmentation many companies have huge databases of customer information,"
+0.9152832000000003,00:04:27.180,00:04:29.832,so can you look at this customer data set and
+0.9152832000000003,00:04:29.891,00:04:34.665,automatically discover market segments in automatically group your customers into
+0.9152832000000003,00:04:34.724,00:04:38.496,different market segments so that you can automatically and more
+0.91528320000000007,00:04:38.496,00:04:42.541,efficiently so or markets you're different market segments together.
+0.9152832000000003,00:04:42.541,00:04:46.139,"Again, this is unsupervised learning because we have all this"
+0.9152832000000003,00:04:46.198,00:04:49.206,customer data but we don't know in advance what are
+0.9152832000000003,00:04:49.265,00:04:52.391,the market segments and for the customers in our data
+0.91528319999999985,00:04:52.391,00:04:54.971,"set, yeah we don't know in advance who is in"
+0.91528319999999985,00:04:55.029,00:04:55.850,Marcus at one.
+0.914296865,00:04:55.850,00:04:58.015,Who's in microsecond two and so on.
+0.91429686500000018,00:04:58.015,00:05:01.065,But we have to let the algorithm discover all this
+0.91429686500000018,00:05:01.126,00:05:02.285,just from the data.
+0.91429686500000051,00:05:02.285,00:05:05.971,"Finally, it turns out that unsupervised learning is also used"
+0.91429686500000051,00:05:06.031,00:05:10.865,for surprisingly astronomical data analysis and these clustering algorithms give
+0.91429686500000051,00:05:10.925,00:05:15.215,surprisingly interesting or useful theories of how galaxies are formed.
+0.914296865,00:05:15.215,00:05:17.501,"All these are examples of clustering,"
+0.914296865,00:05:17.501,00:05:20.447,which is just one type of unsupervised learning.
+0.914296865,00:05:20.447,00:05:22.552,Let me tell you about another one.
+0.91429686500000007,00:05:22.552,00:05:25.860,I'm going to tell you about the cocktail party problem.
+0.90000563899999986,00:05:25.860,00:05:28.226,"So we've been to cocktail parties before,"
+0.90000563899999986,00:05:28.226,00:05:31.136,right? Where you can imagine there's a party room 4
+0.90000563899999986,00:05:31.193,00:05:32.677,people all sitting around.
+0.90000563899999986,00:05:32.677,00:05:35.192,I'll talk in the same time and there are all
+0.90000563899999986,00:05:35.249,00:05:36.678,these overlapping voices.
+0.900005639,00:05:36.678,00:05:40.263,'cause everyone's talking the same time and there's almost hard
+0.900005639,00:05:40.320,00:05:42.312,to hear the person in front of you.
+0.900005639,00:05:42.312,00:05:45.620,So maybe have a cocktail party with two people.
+0.91288125500000017,00:05:45.620,00:05:49.073,Two people talking at the same time and somewhat small
+0.91288125500000017,00:05:49.137,00:05:49.776,"tea party,"
+0.91288125500000006,00:05:49.776,00:05:53.050,"and we're going to put two microphones in the room,"
+0.91288125500000017,00:05:53.050,00:05:56.991,"so there are microphones, and because these microphones are at"
+0.91288125500000017,00:05:57.054,00:05:59.724,"two different distances from the speakers,"
+0.91288125500000017,00:05:59.724,00:06:04.125,each microphone records a different combination of these two speakers
+0.91288125500000017,00:06:04.189,00:06:04.635,voices.
+0.912881255,00:06:04.635,00:06:06.335,"Maybe speaker? One is low,"
+0.91288125500000017,00:06:06.335,00:06:09.645,"louder in microphone one, and maybe speaker two is a"
+0.91288125500000017,00:06:09.709,00:06:12.001,"little bit louder in microphone too,"
+0.91288125500000017,00:06:12.001,00:06:16.157,because the two microphones are at different positions relative to
+0.91288125500000017,00:06:16.220,00:06:17.290,the two speakers.
+0.85839690000000013,00:06:17.290,00:06:22.786,"Oh, but uh, each microphone records it overlapping combination of"
+0.85839690000000013,00:06:22.870,00:06:24.054,both speakers.
+0.85839690000000013,00:06:24.054,00:06:28.531,"Voice is, so here's here's an actual recording of two"
+0.85839690000000013,00:06:28.615,00:06:31.318,speakers recorded by researcher.
+0.85839689999999991,00:06:31.318,00:06:34.241,Let me play for you the first one.
+0.8583969,00:06:34.241,00:06:37.080,"First, microphone sounds like 123."
+0.8608830999999999,00:06:37.080,00:06:39.678,"Let's see anything going through my head,"
+0.86088309999999968,00:06:39.678,00:06:43.105,"all right, maybe not the most interesting copy of hobby"
+0.86088309999999968,00:06:43.168,00:06:45.785,is 2 people counting from one to 10 in two
+0.86088309999999968,00:06:45.847,00:06:48.153,languages that you know there you go.
+0.8608830999999999,00:06:48.153,00:06:51.618,What you just heard was the first microphone recording.
+0.7120956,00:06:51.618,00:06:58.375,"Here's the second recording. Woman to stay quiet single,"
+0.5930656,00:06:58.375,00:07:02.870,safe city Ultron when he is.
+0.90378139999999985,00:07:02.870,00:07:06.048,Just need to microphone recordings and give them to an
+0.90378139999999985,00:07:06.107,00:07:10.580,unsupervised learning algorithm called the cocktail party algorithm and tell
+0.90378139999999985,00:07:10.639,00:07:13.700,the algorithm find structure in this data for me and
+0.90378139999999985,00:07:13.700,00:07:16.469,what the album will do is listen to these audio
+0.90378139999999985,00:07:16.528,00:07:19.473,recordings and say you know it sounds like the two
+0.90378139999999985,00:07:19.532,00:07:23.184,audio recordings that being added together or there being some
+0.90378139999999985,00:07:23.184,00:07:26.600,together to produce these recordings that we had more over
+0.90378139999999985,00:07:26.658,00:07:30.015,what the cocktail party algorithm will do is separate out
+0.90378139999999985,00:07:30.074,00:07:33.254,these two audio sources that were being added or being
+0.90378139999999985,00:07:33.254,00:07:35.420,some together to form our recordings.
+0.860277236,00:07:35.420,00:07:39.618,"And in fact, here's the first output of the cocktail"
+0.860277236,00:07:39.698,00:07:40.990,party algorithm.
+0.89298409999999973,00:07:40.990,00:07:47.836,3456789 ten so separated out the English voice in one
+0.89298409999999973,00:07:47.965,00:07:52.098,of his in one of the recordings.
+0.8929841,00:07:52.098,00:07:55.800,And here's the second output.
+0.7139055,00:07:55.800,00:08:03.490,Trace Quattro Cinco says city or June very easiest.
+0.900446653,00:08:03.490,00:08:05.491,"To give you one more example,"
+0.90044665300000015,00:08:05.491,00:08:09.159,here's another recording of another similar situation.
+0.900446653,00:08:09.159,00:08:10.960,He is the first microphone.
+0.82206100000000026,00:08:10.960,00:08:15.236,3456789 ten OK. So the poor guys gone home from
+0.82206100000000026,00:08:15.327,00:08:19.967,the cocktail party and he's now serving in the room
+0.82206100000000026,00:08:20.058,00:08:22.969,by himself talking to his radio.
+0.822061,00:08:22.969,00:08:26.490,Here's the second microphone recording.
+0.730996668,00:08:26.490,00:08:33.190,5789
+0.8837027,00:08:33.190,00:08:37.632,When you give these two microphone recording to the same
+0.8837027,00:08:37.711,00:08:38.504,"algorithm,"
+0.8837027000000004,00:08:38.504,00:08:41.966,what it does is again say you know it sounds
+0.8837027000000004,00:08:42.044,00:08:46.372,like there are two audio sources and Moreover the album
+0.8837027000000004,00:08:46.450,00:08:49.912,says here is the first of the audio sources.
+0.86357325466666679,00:08:49.912,00:08:53.610,I found 123. 789 ten so that wasn't perfect.
+0.85350853199999976,00:08:53.610,00:08:57.285,"It got the voice, but it also got a little"
+0.85350853199999976,00:08:57.372,00:08:59.647,bit of the music in there.
+0.8535085320000001,00:08:59.647,00:09:03.700,Then here's the second output of the algorithm.
+0.87411980000000034,00:09:08.830,00:09:11.746,Not too bad in that second output in managed to
+0.87411980000000034,00:09:11.808,00:09:13.669,get rid of the voice entirely.
+0.87411980000000034,00:09:13.669,00:09:16.692,An just cleaned up the music and got rid of
+0.87411980000000034,00:09:16.762,00:09:18.730,the counting from one to 10.
+0.89779629999999966,00:09:18.730,00:09:22.405,So you might look at an unsupervised learning algorithm like
+0.89779629999999966,00:09:22.467,00:09:22.773,"this,"
+0.89779629999999988,00:09:22.773,00:09:24.704,and also how complicated is it.
+0.89779629999999966,00:09:24.704,00:09:27.947,Implement this right? It seems like in order to build
+0.89779629999999966,00:09:28.008,00:09:29.048,"this application,"
+0.89779629999999966,00:09:29.048,00:09:32.027,it seems like to do this audio processing need to
+0.89779629999999966,00:09:32.088,00:09:34.580,write a ton of code or may be linked into
+0.89779629999999966,00:09:34.641,00:09:37.255,a like a bunch of C++ or Java libraries are
+0.89779629999999977,00:09:37.255,00:09:41.177,process audio. Seems like really complicated program to do this.
+0.89779629999999988,00:09:41.177,00:09:43.229,Audio separating audio and so on.
+0.89779629999999977,00:09:43.229,00:09:46.004,It turns out the algorithm to do what you just
+0.89779629999999977,00:09:46.065,00:09:48.780,heard that can be done with one line of code.
+0.8982737999999999,00:09:48.780,00:09:51.932,"Shown right here, it did take me searches along time"
+0.8982737999999999,00:09:51.992,00:09:54.053,"to come up with this line of code,"
+0.8982737999999999,00:09:54.053,00:09:56.630,"so I'm not saying this is an easy problem,"
+0.8982738,00:09:56.630,00:09:59.674,but it turns out that we use the right programming
+0.8982738,00:09:59.735,00:10:00.465,environment.
+0.8982738,00:10:00.465,00:10:03.760,"Many learning algorithms can be really short programs,"
+0.8982738,00:10:03.760,00:10:06.487,so this is also why in this cause we're going
+0.8982738,00:10:06.548,00:10:09.093,to use the octave programming environment.
+0.89827379999999946,00:10:09.093,00:10:12.231,Octave is free open source software and using a tool
+0.89827379999999946,00:10:12.291,00:10:15.911,like octave or Matlab menu learning algorithms become just a
+0.89827379999999946,00:10:15.972,00:10:17.842,few lines of code to implement.
+0.8982737999999999,00:10:17.842,00:10:19.400,They turn this class also.
+0.88733923400000014,00:10:19.400,00:10:22.095,Teach a little bit about how to use octave anubi
+0.88733923400000014,00:10:22.151,00:10:24.622,"implementing some of these albums an octave,"
+0.887339234,00:10:24.622,00:10:25.900,"or if you have matlab,"
+0.88733923400000014,00:10:25.900,00:10:28.596,you can use that to turns out the Silicon Valley
+0.88733923400000014,00:10:28.652,00:10:30.955,for a lot of machine learning algorithms.
+0.88733923399999992,00:10:30.955,00:10:33.955,"What we do is first prototype our software in octave,"
+0.88733923399999992,00:10:33.955,00:10:36.955,because software that often makes it incredibly fast.
+0.887339234,00:10:36.955,00:10:39.288,Implement these learning algorithms here.
+0.88733923400000014,00:10:39.288,00:10:42.542,"Each of these functions, like for example the SVD function"
+0.88733923400000014,00:10:42.598,00:10:45.010,"that stands for single value decomposition,"
+0.88733923399999992,00:10:45.010,00:10:47.843,but that turns out to be a linear algebra routine.
+0.887339234,00:10:47.843,00:10:49.510,Those just built into October.
+0.85618543599999986,00:10:49.510,00:10:51.634,"If you were trying to do this in C,"
+0.856185436,00:10:51.634,00:10:53.167,"Java, this would be many,"
+0.85618543599999986,00:10:53.167,00:10:56.530,"many lines of code linking and complex C Java libraries,"
+0.85618543599999986,00:10:56.530,00:10:58.949,so you can implement this stuff in Java.
+0.85618543599999986,00:10:58.949,00:11:01.544,Python is just much more complicated to do.
+0.87196760800000028,00:11:01.544,00:11:05.488,Some of those languages. What I've seen after having taught
+0.87196760800000028,00:11:05.555,00:11:08.898,"machine learning for almost forgot the decade now,"
+0.87647680000000017,00:11:08.898,00:11:11.791,is that you learn much faster if you use octave
+0.87647680000000017,00:11:11.853,00:11:13.823,"as your programming environment,"
+0.87647680000000017,00:11:13.823,00:11:16.792,and if you use octave as you're learning tool in
+0.87647680000000017,00:11:16.854,00:11:17.349,"the zoo,"
+0.87647680000000017,00:11:17.349,00:11:21.412,prototyping to let you learn an prototype learning algorithms much
+0.87647680000000017,00:11:21.474,00:11:22.274,"more quickly,"
+0.87647679999999972,00:11:22.274,00:11:24.905,and in fact what many people will do in the
+0.87647679999999972,00:11:24.966,00:11:28.269,last week and value companies in fact use an algorithm
+0.87647679999999972,00:11:28.330,00:11:32.001,like octave to 1st prototype the learning algorithm and only
+0.87647680000000017,00:11:32.001,00:11:35.162,after you've gotten to work and then you migrated to
+0.87647680000000017,00:11:35.223,00:11:36.500,see Java or whatever.
+0.885828137,00:11:36.500,00:11:39.061,"It turns out that by doing things this way,"
+0.88582813700000029,00:11:39.061,00:11:42.121,you can often get your algorithm to work much faster
+0.88582813700000029,00:11:42.180,00:11:44.240,than if you were starting out in C.
+0.885828137,00:11:44.240,00:11:45.986,So I know that this instruct.
+0.885828137,00:11:45.986,00:11:47.615,"As an instructor, I get to,"
+0.885828137,00:11:47.615,00:11:49.187,"say, trust me on this one."
+0.885828137,00:11:49.187,00:11:50.991,"Only a finite number of times,"
+0.88582813700000018,00:11:50.991,00:11:53.996,but for those who have never used these octave type
+0.88582813700000018,00:11:54.055,00:11:55.705,"program environments before,"
+0.88582813700000029,00:11:55.705,00:11:58.304,I'm going to answer the trust me on this one
+0.88582813700000029,00:11:58.363,00:11:59.662,and say that you will.
+0.88582813700000029,00:11:59.662,00:12:02.430,I think your time. Will you develop the time as
+0.88582813700000029,00:12:02.489,00:12:04.550,"well the most valuable resource is,"
+0.885828137,00:12:04.550,00:12:06.820,and having seen lots of people do this.
+0.90464560000000016,00:12:06.820,00:12:09.563,I think you as a machine learning research from machine
+0.90464560000000016,00:12:09.613,00:12:10.560,"learning developer,"
+0.90464560000000016,00:12:10.560,00:12:13.108,will be much more productive if you learn the stuff
+0.90464560000000016,00:12:13.158,00:12:13.808,in prototype.
+0.9046456,00:12:13.808,00:12:17.510,Just stuff in octave and in some other language.
+0.884658039,00:12:17.510,00:12:20.052,"Finally, to wrap up this video,"
+0.88465803899999984,00:12:20.052,00:12:24.350,I have one quick review question for you.
+0.91665910000000006,00:12:24.350,00:12:26.568,"We talked about unsupervised learning,"
+0.91665910000000028,00:12:26.568,00:12:29.775,which is a learning setting where you give the algorithm
+0.91665910000000028,00:12:29.832,00:12:32.008,a ton of data and just ask you to find
+0.91665910000000028,00:12:32.066,00:12:34.700,structure in the data for us of the following.
+0.91665910000000028,00:12:34.700,00:12:37.674,"For examples, which ones? Which of these four do you"
+0.91665910000000028,00:12:37.732,00:12:41.392,think would be an unsupervised learning out algorithm as opposed
+0.91665910000000028,00:12:41.449,00:12:44.481,to a supervised learning problem for each of the four
+0.91665910000000006,00:12:44.481,00:12:45.903,check boxes on the left?
+0.91665910000000028,00:12:45.903,00:12:49.656,Check the ones for which you think unsupervised learning algorithm
+0.91665910000000028,00:12:49.713,00:12:52.727,would be appropriate and then click the button on the
+0.91665910000000028,00:12:52.784,00:12:54.660,lower right to check your answer.
+0.89753329999999987,00:12:54.660,00:12:56.523,"So when the video pauses,"
+0.8975333,00:12:56.523,00:12:59.460,please answer the question on this slide.
+0.88304899999999986,00:13:01.750,00:13:04.672,So hopefully remembered the spam filter problem.
+0.88304899999999986,00:13:04.672,00:13:07.339,If you have label deeds her you know spam in
+0.88304899999999986,00:13:07.400,00:13:08.309,non spam email.
+0.88304899999999986,00:13:08.309,00:13:11.052,We treat it as a supervised learning problem.
+0.883049,00:13:11.052,00:13:12.602,"The new store we example,"
+0.88304899999999986,00:13:12.602,00:13:15.811,that's exactly the Google news example that we saw in
+0.88304899999999986,00:13:15.872,00:13:16.538,this video.
+0.88304899999999986,00:13:16.538,00:13:19.435,And so how you can use a clustering algorithm to
+0.88304899999999986,00:13:19.496,00:13:21.367,cluster news articles together.
+0.88304899999999986,00:13:21.367,00:13:25.243,"So that's unsurprised. Learning the market segmentation example,"
+0.88304899999999986,00:13:25.243,00:13:27.092,"I talked a little bit earlier,"
+0.88304899999999986,00:13:27.092,00:13:30.669,do that as an unsupervised learning problem because I'm just
+0.88304899999999986,00:13:30.729,00:13:32.160,gonna get my album data.
+0.89427079999999981,00:13:32.160,00:13:35.806,And ask it to discover market segments automatically and the
+0.89427079999999981,00:13:35.866,00:13:37.264,final example diabetes.
+0.89427079999999981,00:13:37.264,00:13:41.035,"Well, that's actually just like our breast cancer example from"
+0.89427079999999981,00:13:41.096,00:13:42.008,the laws video.
+0.89427079999999981,00:13:42.008,00:13:45.109,Only instead of you know good and bad cancer tumors
+0.89427079999999981,00:13:45.170,00:13:46.812,or benign malignant tumors.
+0.8942708,00:13:46.812,00:13:49.093,"We instead have have diabetes or not,"
+0.8942708,00:13:49.093,00:13:51.555,and so we will use that as a supervised.
+0.8942708,00:13:51.555,00:13:54.738,"We will solve that as a supervised learning problem,"
+0.8942708,00:13:54.738,00:13:58.170,just like we did for the breast tumor data.
+0.91773045099999984,00:13:58.170,00:14:00.814,So that's it for unsupervised learning.
+0.91773045100000039,00:14:00.814,00:14:04.353,And in the next video will delve more into specific
+0.91773045100000039,00:14:04.423,00:14:08.448,learning algorithms and start to talk about just how these
+0.91773045100000039,00:14:08.517,00:14:12.265,albums work and how we can go about implementing them.

@@ -1,0 +1,137 @@
+0.92234468460083008,00:00:00.000,00:00:03.254,Office learning algorithm will be linear regression in this video
+0.92234468460083008,00:00:03.304,00:00:06.007,you see what the model looks like and more importantly
+0.92234468460083008,00:00:06.057,00:00:09.061,you also see what the overall process of supervised learning
+0.92234468460083008,00:00:09.111,00:00:09.361,looks
+0.92234468460083008,00:00:09.361,00:00:09.560,like
+0.89630728960037231,00:00:11.990,00:00:16.643,Let's use our motivating example or predicting housing prices were
+0.89630728960037231,00:00:16.714,00:00:19.957,going to use a data set of housing prices from
+0.89630728960037231,00:00:20.028,00:00:23.412,the city of Portland OR and you're going to plot
+0.89630728960037231,00:00:23.412,00:00:26.697,my data set of a number of houses that were
+0.89630728960037231,00:00:26.773,00:00:30.745,different sizes that was so for a range of different
+0.89630728960037231,00:00:30.822,00:00:31.280,prices
+0.89401435852050781,00:00:31.280,00:00:34.273,Let's say that given this data set you have a
+0.89401435852050781,00:00:34.339,00:00:37.864,friend that's trying to sell house and let's see your
+0.89401435852050781,00:00:37.931,00:00:41.456,friends houses of size 12150 square feet and you want
+0.89401435852050781,00:00:41.456,00:00:44.613,to tell them how much they might be able to
+0.89401435852050781,00:00:44.686,00:00:48.210,sell the healthful well once you could do is fit
+0.89401435852050781,00:00:48.283,00:00:51.880,to model maybe for the straight line to this data
+0.89855313301086426,00:00:51.880,00:00:55.760,Something like that and based on that maybe you could
+0.89855313301086426,00:00:55.833,00:00:57.370,tell your friend that
+0.80409091711044312,00:00:57.370,00:01:00.320,Looks at it and maybe sell the holes there around
+0.90095601081848142,00:01:00.320,00:01:03.937,"Tuition $20,000 So this is an example of a supervised"
+0.90095601081848142,00:01:04.005,00:01:08.715,learning algorithm and is supervised learning because we've given the
+0.90095601081848142,00:01:08.783,00:01:12.673,quotes right answer for each of our examples namely would
+0.90687131881713867,00:01:12.673,00:01:15.680,tell what was the actual house what was the actual
+0.90687131881713867,00:01:15.740,00:01:18.326,price in each of the houses in our data set
+0.90687131881713867,00:01:18.386,00:01:21.152,with so forth and Moreover it is an example of
+0.90687131881713867,00:01:21.152,00:01:24.876,a regression problem where the term regression refers the fact
+0.90687131881713867,00:01:24.936,00:01:28.420,that we're predicting a real valued output maybe the price
+0.90687131881713867,00:01:28.480,00:01:31.423,and then just remind you the other type the other
+0.89954609341091585,00:01:31.423,00:01:36.048,most common type of supervised learning problem Is called the
+0.89954609341091585,00:01:36.124,00:01:40.900,classification problem where we predict discreet values outputs
+0.89916616678237915,00:01:40.900,00:01:44.801,Such as if we are looking at cancer tumors and
+0.89916616678237915,00:01:44.886,00:01:49.126,trying to decide if a tumor is malignant or benign
+0.89916616678237915,00:01:49.211,00:01:52.010,so there's a 01 value to speed up
+0.88747411966323853,00:01:52.010,00:01:55.197,More formally in supervised learning we have a data set
+0.88747411966323853,00:01:55.255,00:01:57.862,and this data set is called a training set so
+0.88747411966323853,00:01:57.920,00:02:01.165,for housing crisis an example where the training sets of
+0.88747411966323853,00:02:01.165,00:02:04.235,different housing prices and our job is to learn from
+0.88747411966323853,00:02:04.293,00:02:07.131,this data how to predict the prices of the houses
+0.88747411966323853,00:02:07.188,00:02:11.069,let's defines notation that we're using throughout this calls going
+0.88747411966323853,00:02:11.069,00:02:13.446,to define quite a lot of symbols is OK if
+0.88747411966323853,00:02:13.504,00:02:16.578,you don't remember all the symbols right now but it's
+0.88747411966323853,00:02:16.636,00:02:19.419,the coolest progress is will be useful to have a
+0.87792447408040364,00:02:19.419,00:02:23.627,convenient notation so I'm going to use lowercase M throughout
+0.87792447408040364,00:02:23.695,00:02:27.495,this course did you know the number of training examples
+0.87792447408040364,00:02:27.563,00:02:30.210,so in this data set if I have let's say
+0.87445187568664551,00:02:30.210,00:02:33.817,47 rows in this table then I have 47 training
+0.87445187568664551,00:02:33.897,00:02:35.740,examples an M equals 47
+0.84224814176559448,00:02:35.740,00:02:38.518,Let me use lowercase X did you know the input
+0.84224814176559448,00:02:38.579,00:02:42.345,variables often also called the features so they'll be excess
+0.84224814176559448,00:02:42.406,00:02:44.320,here would be an input features
+0.7880483865737915,00:02:44.320,00:02:47.604,And I'm going to use why did you know my
+0.7880483865737915,00:02:47.686,00:02:52.776,open variables or the target variable 2nd column here although
+0.7880483865737915,00:02:52.858,00:02:56.552,people notation I'm going to use X comma Y to
+0.78773462772369385,00:02:56.552,00:02:59.600,denote a single training example
+0.89791965484619141,00:03:04.000,00:03:07.573,So a single row in this table corresponds to a
+0.89791965484619141,00:03:07.651,00:03:12.234,single training example and to refer to a specific training
+0.89791965484619141,00:03:12.311,00:03:16.040,example I'm going to use this notation Zoe comma
+0.50423943996429443,00:03:16.040,00:03:18.810,Why I
+0.87338703870773315,00:03:18.810,00:03:23.940,And going to use this to refer to the iPhone
+0.9106907844543457,00:03:23.940,00:03:25.180,Training example
+0.82364213466644287,00:03:27.860,00:03:32.510,So this superscript I over here
+0.82553786039352417,00:03:32.510,00:03:37.772,This is not exponentiation right this XIII the superscript I
+0.82553786039352417,00:03:37.860,00:03:42.858,in parentheses that's just an index into my training sets
+0.82553786039352417,00:03:42.946,00:03:46.980,refers to the iPhone row in this table so this
+0.82553786039352417,00:03:46.980,00:03:52.167,is not except horrify whites instead XIII just refers to
+0.82553786039352417,00:03:52.260,00:03:56.150,the row of this table so for example X one
+0.81086921691894531,00:03:56.150,00:04:00.244,You know refers to the input value for my first
+0.81086921691894531,00:04:00.331,00:04:04.599,training example so this 2104 by process X in the
+0.81086921691894531,00:04:04.686,00:04:05.470,first row
+0.82939106225967407,00:04:05.470,00:04:09.100,It's two would be equal to
+0.81210446357727051,00:04:09.100,00:04:14.260,1416 right this second X&Y one will be equal to
+0.81210446357727051,00:04:14.370,00:04:19.090,460 with the first the Y value for my first
+0.81210446357727051,00:04:19.200,00:04:24.360,training example that's what that one refers to
+0.92153441905975342,00:04:24.360,00:04:27.380,So as mentioned occasionally I'll ask you a question to
+0.92153441905975342,00:04:27.435,00:04:30.400,let you check your own understanding and a few seconds
+0.92153441905975342,00:04:30.455,00:04:33.310,in this video a multiple choice question will pop up
+0.92153441905975342,00:04:33.310,00:04:36.554,in the video when it does please use your mouse
+0.92153441905975342,00:04:36.623,00:04:39.660,to select what you think is the right answer
+0.88542944192886353,00:04:39.660,00:04:42.707,Well defined by the training set is and so here's
+0.88542944192886353,00:04:42.769,00:04:46.189,how I supervised learning how it works we thought about
+0.88542944192886353,00:04:46.251,00:04:49.920,the training set like large training sets of housing prices
+0.88542944192886353,00:04:49.920,00:04:52.905,an we feed that to our learning algorithm is the
+0.88542944192886353,00:04:52.967,00:04:56.264,job of a learning algorithm to then output a function
+0.88542944192886353,00:04:56.326,00:04:59.995,which by convention is usually to note lowercase H&H stands
+0.88542944192886353,00:04:59.995,00:05:02.560,for hypothesis
+0.88899844884872437,00:05:02.560,00:05:05.459,And what the job of the hypothesis is is a
+0.88899844884872437,00:05:05.528,00:05:08.841,function that takes us input the size of a house
+0.88899844884872437,00:05:08.910,00:05:11.947,like maybe the size of a new holes that your
+0.88899844884872437,00:05:11.947,00:05:16.066,friend is trying to sell cities in the value of
+0.88899844884872437,00:05:16.154,00:05:20.010,X and it tries to output the estimated value
+0.56728798151016235,00:05:20.010,00:05:22.680,Of why
+0.85756951570510864,00:05:22.680,00:05:26.890,For their corresponding holes so which is a function
+0.85016903281211853,00:05:26.890,00:05:31.397,That Maps From Access Two wise People often ask me
+0.85016903281211853,00:05:31.487,00:05:36.445,you know why is this function called hypothesis some of
+0.85016903281211853,00:05:36.535,00:05:41.222,you may know the meaning of the term hypothesis from
+0.89659976959228516,00:05:41.222,00:05:44.175,the dictionary from signs or whatever it turns out that
+0.89659976959228516,00:05:44.229,00:05:46.806,in machine learning this is a name that was used
+0.89659976959228516,00:05:46.860,00:05:49.598,in the early days of machine learning and this kind
+0.89659976959228516,00:05:49.598,00:05:52.121,of stuff 'cause maybe not a great name for this
+0.89659976959228516,00:05:52.175,00:05:55.073,order function for mapping from sizes of houses to the
+0.89659976959228516,00:05:55.127,00:05:58.294,predictions that you know I think the term hypothesis maybe
+0.90356505910555518,00:05:58.294,00:06:00.940,isn't the best possible name for this this is what
+0.90356505910555518,00:06:00.993,00:06:04.167,is the standard terminology that people using the shooter in
+0.90356505910555518,00:06:04.220,00:06:06.919,email so don't worry too Don't worry too much about
+0.93839150667190552,00:06:06.919,00:06:09.120,why people call it that
+0.84894412755966187,00:06:09.120,00:06:13.810,When designing your learning algorithm the next thing we need
+0.84894412755966187,00:06:13.887,00:06:17.731,to decide is how do we represent this hypothesis H
+0.84894412755966187,00:06:17.808,00:06:21.191,for this in the next few videos I'm going to
+0.84894412755966187,00:06:21.191,00:06:26.186,choose our initial choice for representing the hypothesis will be
+0.84894412755966187,00:06:26.263,00:06:30.413,the following represent H as follows with the right to
+0.84894412755966187,00:06:30.490,00:06:34.179,this subscript Theta of X equals 0 plus data one
+0.82121689915657048,00:06:34.179,00:06:38.666,of X and As a shorthand sometimes instead of writing
+0.82121689915657048,00:06:38.752,00:06:43.153,you know each subscript data of eggs sometimes as a
+0.82121689915657048,00:06:43.240,00:06:48.676,shorthand lodges right does this more often subscript data over
+0.81813609600067139,00:06:48.676,00:06:53.568,there and plotting to some pictures all this means is
+0.81813609600067139,00:06:53.661,00:06:57.353,that we are going to predict that Y is a
+0.81813609600067139,00:06:57.445,00:06:58.830,linear function
+0.86287212371826172,00:06:58.830,00:07:03.432,Right so there's a data set and what this function
+0.86287212371826172,00:07:03.524,00:07:06.470,is doing is is predicting that Y
+0.76336508989334106,00:07:06.470,00:07:09.920,In some straight line function of it
+0.55847257375717163,00:07:09.920,00:07:13.080,People still easier plus stated
+0.87704849143822983,00:07:13.080,00:07:17.241,Next And why are linear function well sometimes will want
+0.87704849143822983,00:07:17.314,00:07:21.913,to fit more complicated perhaps nonlinear functions as well but
+0.87704849143822983,00:07:21.986,00:07:26.366,since this linear cases the simple building block will start
+0.89181780815124512,00:07:26.366,00:07:30.174,with this example first so fitting linear functions and will
+0.89181780815124512,00:07:30.237,00:07:33.855,build on this too eventually have more complex models and
+0.89181780815124512,00:07:33.918,00:07:38.043,more complex learning algorithms let me also give this particular
+0.87385698954264324,00:07:38.043,00:07:41.714,model and aim small though is called linear regression or
+0.87385698954264324,00:07:41.778,00:07:46.351,discreetly example is actually linear regression with one variable With
+0.87385698954264324,00:07:46.416,00:07:50.795,the devil being expensive collecting housing prices functions of one
+0.8428337574005127,00:07:50.795,00:07:54.798,variable X and another name for this model is unique
+0.8428337574005127,00:07:54.875,00:07:58.801,the area linear regression and you need the area is
+0.8428337574005127,00:07:58.878,00:08:01.880,just a fancy way of saying one variable
+0.91764092445373535,00:08:01.880,00:08:05.639,So that's linear regression in the next video will start
+0.91764092445373535,00:08:05.706,00:08:09.197,to talk about just how we go about implementing this
+0.91764092445373535,00:08:09.264,00:08:09.600,model
