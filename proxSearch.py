@@ -22,10 +22,12 @@ def checkProx(word1, word2, arr1, arr2, prox, proxarr):
             line = linefunc
         elif word2 in linefunc:
             arr2[len(arr2)] = timeStamp(linefunc)
+            prox += 1
+            proxarr[len(proxarr)] = timeStamp(line)
             break
         else:
             count += 1
-    
+    return arr1,arr2,prox,proxarr    
 
 
 
