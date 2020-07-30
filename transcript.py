@@ -41,16 +41,10 @@ for x in range(clips+1):
 
     with sr.AudioFile(tempAudio) as source: #ISSUE HERE, find way to not have to write a file every time
         audioOut = r.record(source)
-    text.write(str(minute) + ":" + f"{second:02d}"+ "    " + r.recognize_google(audioOut) + "\n\n")
+    text.write(str(minute) + ":" + f"{second:02d}"+ "    " + r.recognize_google(audioOut) + "\n")
     print("Current clip: " + str(x),end="\r")
 
 text.close
 
 os.remove(fullAudio)
 os.remove(tempAudio)
-
-# notes at 7/5
-# need to shorten the divisions, it only seems to transcribe 10 seconds worth of audio at a time, we need a lot more. might be because of print limitation?
-# look into putting it into a text file, that might be next step
-# very slow, look into sphinx detection.
-# find better way to save audio files
