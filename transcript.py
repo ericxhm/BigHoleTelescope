@@ -41,7 +41,7 @@ for x in range(clips+1):
 
     with sr.AudioFile(tempAudio) as source: #ISSUE HERE, find way to not have to write a file every time
         audioOut = r.record(source)
-    text.write(str(minute) + ":" + f"{second:02d}"+ "    " + r.recognize_google(audioOut) + "\n")
+    text.write(str(minute) + ":" + f"{second:02d}"+ "    " + r.recognize_google(audioOut).lower() + "\n")
     print("Current clip: " + str(x),end="\r")
 
 text.close
